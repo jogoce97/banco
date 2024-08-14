@@ -1,11 +1,11 @@
 package org.example;
 
-import java.util.Date;
+
 import java.util.Objects;
 
 public abstract class Pessoa {
     private String nome;
-    private Date dataNascimento;
+    private String dataNascimento;
 
     public String getNome() {
         return nome;
@@ -15,11 +15,11 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
-    public Date getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

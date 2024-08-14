@@ -10,4 +10,16 @@ public class PessoaFisica extends Pessoa{
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
+    public PessoaFisica(String cpf) {
+        super();
+        this.cpf = cpf;
+    }
+
+    @Override
+    public String toString() {
+        return "PessoaFisica{" +
+                "cpf='" + cpf + '\'' + super.toString() +
+                '}';
+    }
 }
