@@ -1,6 +1,7 @@
 package org.example;
 
 public class ContaCorrente implements Conta{
+    public static final Double taxa = 5.0;
 
     @Override
     public Double depositar(double valor) {
@@ -8,7 +9,8 @@ public class ContaCorrente implements Conta{
     }
 
     @Override
-    public Double sacar(double valor) {
+    public final Double sacar(double valor) {
         return null;
     }
+
 }
